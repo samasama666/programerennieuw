@@ -40,3 +40,9 @@ button{
 button:active{
     font-size: 23px;
 }
+
+div :first-of-type {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
