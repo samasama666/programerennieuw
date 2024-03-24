@@ -17,7 +17,7 @@ const slaapAudio = new Audio("img/snoring-6773 (mp3cut.net).mp3")
 function resetImageAfterDelay() {
     setTimeout(function() {
         cat.src = origineleAfbeelding;
-    }, 2000); // vergeet het niet te veranderen in milliseconden
+    }, 2500); // vergeet het niet te veranderen in milliseconden
 }
 
 // Event listeners voor de buttons. hulp van een 4de jaars.
@@ -30,7 +30,7 @@ function eten() {
     console.log('cat eet'); 
     resetImageAfterDelay();
     etenAudio.play()
-    Seconds = 60
+    Seconds = 30
 }
 
 function douchen() {
@@ -38,7 +38,7 @@ function douchen() {
     console.log('douchenKnop');
     resetImageAfterDelay();
     doucheAudio.play()
-    Seconds = 60
+    Seconds = 30
 }
 
 function slapen() {
@@ -46,15 +46,16 @@ function slapen() {
     console.log('slaapKnop');
     resetImageAfterDelay();
     slaapAudio.play()
-    Seconds = 60
+    Seconds = 30
 }
 
 function dood() {
     cat.src = 'img/catdead.jpeg';
     console.log('cat is dood')
+    
 }
 
-Seconds = 60;
+Seconds = 30;
 
 // de countdown functie en de settimeout functie heb ik hulp bij gekregen van lam
 function countdown() {
@@ -65,8 +66,7 @@ function countdown() {
     }
     else {
     dood()
-    console.log("Time's up!");
-    alert("oh, hij is dood!")
+    alert('oh, Kitty is dood☠️!')
     }
 }
 
@@ -77,9 +77,7 @@ const timer = setInterval(function() {
   count--;
   console.log(count);
   if (count === 0) {
-    clearInterval(timer);
-    
-   
+    clearInterval(timer); 
   }
 }, 1000);
 
